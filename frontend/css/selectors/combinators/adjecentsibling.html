@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Adjecent sibling */
+        /* applied to the immediate elements */
+        /* syntax
+            <selector> + <selector>
+        */
+        div+p {
+            background-color: brown;
+            color: white;
+        }
+
+        ul+li {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>This a text that is not styled</p>
+    </div>
+    <p>This is some more text that is styled</p>
+    <p>This is some more text that is not styled</p>
+
+    <div></div>
+    <p>This is styled also</p>
+    <p>This is some more text that is not styled</p>
+
+    <hr>
+
+    <ul>
+        <ul></ul>
+        <li>Important</li>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+</body>
+
+</html>
