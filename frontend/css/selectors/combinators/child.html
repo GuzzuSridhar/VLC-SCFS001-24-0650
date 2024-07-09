@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Combinator selector is always a combination of two or more selectors
+         Child combinator
+         syntax 
+         <selector> ">" selector
+        example
+        div>p
+         styles all the direct child p elements of the div
+        
+        */
+
+        div>p {
+            background-color: aqua;
+        }
+
+        .myclass>span {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Child Selector</h1>
+    <div>
+        <p>This is styled</p>
+        <p>This is styled</p>
+        <h2>This is not styled</h2>
+        <p>This is styled</p>
+    </div>
+    <p>This is not styled</p>
+
+    <div class="myclass">
+        <span>This is styled</span>
+    </div>
+
+    <p class="myclass">This is <span>styled</span></p>
+</body>
+
+</html>
