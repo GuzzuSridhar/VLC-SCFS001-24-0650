@@ -1,0 +1,13 @@
+/* the css file contains the style attributes */
+/* the css file can then, be attached to multiple HTML files  */
+
+/* 
+        A CSS property is always a key:value pair
+        multiple properties can be applied and are seperated with a semi-colon
+        
+*/
+
+p{
+    color:red;
+    background-color: aqua;
+}
