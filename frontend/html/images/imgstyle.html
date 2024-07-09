@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Displaying images</h1>
+    <hr>
+    <!-- 
+    styles that can be applied to an image
+        1. border of an image
+        2. border radius
+        3. opacity
+        4. box shadow
+        5. height and width
+
+
+    -->
+    <img src="../resources/person1.jpg" alt="" height="200" width="200" style="border: 10px solid blue;">
+    <br>
+    <img src="../resources/person1.jpg" alt="" height="200px" width="200px" style="border-radius: 70%;">
+    <br>
+    <img src="../resources/person1.jpg" alt="" height="200px" width="200px" style="opacity: 0.1; ">
+    <br>
+    <img src="../resources/person1.jpg" alt="" height="200px" width="200px" style="box-shadow: 20px 20px 5px gray;">
+    <br>
+
+    <!-- 
+    the height and width of an image can be set using the following
+    1. using the attributes of img tag (look at lines 23, 25, 27 above)
+        allows only the px as an unit of measurement and no other relative units are allowed
+        not advised to set the properties this way
+    2. using the style properties (look at line 29 above)
+        allows all the units of measurements like the px, %, VW. VH, em ,  rem
+        preferred way of setting the properties height and width
+    -->
+    <img src="../resources/person1.jpg" alt="" style="width: 150px ;height: 150px ;">
+    <img src="../resources/person1.jpg" alt="" style="width: 20% ;height: 20% ;">
+
+
+
+</body>
+
+</html>

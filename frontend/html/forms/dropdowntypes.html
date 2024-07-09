@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Drop down element types  
+        select -- is an element in which the user can choose the values within 
+        datalist -- extension to the input type text (i.e. choose from the existing values or type a new value)
+    -->
+
+    <form action="">
+        <h2>Choose your Mother tounge</h2>
+        <!-- choose a single value -->
+        <select name="lang" id="lang">
+            <option value="english">English</option>
+            <option value="chinese"> Chinese</option>
+            <option value="japanese">Japanese</option>
+            <option value="tamil">Tamil</option>
+            <option value="hindi">Hindi</option>
+            <option value="french">French</option>
+        </select>
+        <!-- Choose multiple values -->
+        <select name="lang" id="lang" multiple>
+            <option value="english">English</option>
+            <option value="chinese"> Chinese</option>
+            <option value="japanese">Japanese</option>
+            <option value="tamil">Tamil</option>
+            <option value="hindi">Hindi</option>
+            <option value="french">French</option>
+        </select>
+        <hr>
+
+        <!-- Data List 
+        is used to suggest the values to a user 
+        -->
+        <label for="fruit">Select your Favorite Fruit</label>
+        <input list="x" id="fruit" name="fruit">
+        <datalist id="x">
+            <option value="apple">
+            <option value="grapes">
+            <option value="banana">
+            <option value="pineapple">
+            <option value="Orange">
+        </datalist>
+
+    </form>
+
+</body>
+
+</html>

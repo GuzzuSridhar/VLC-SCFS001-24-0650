@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Demo of available input types -->
+    <h2>Available form input types</h2>
+    <form action="#">
+        <!-- text input -->
+        <label for="txt">Text type</label>
+        <input type="text" name="username" id="txt">
+        <hr>
+        <!-- password type -->
+        <label for="pwd">Password Type</label>
+        <input type="password" id="pwd">
+        <hr>
+        <!-- Number type -->
+        <label for="num">Number Type</label>
+        <input type="number" id="num">
+        <hr>
+        <!-- radio buttons 
+            list of options from which the user can select only on value 
+        -->
+        <h4>Select Subscription type (Radio Buttons)</h4>
+        <table>
+            <tr>
+                <td><input type="radio" name="stype" id="free" value="Free"></td>
+                <td><label for="free">Free</label></td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="stype" id="monthly" value="Monthly"></td>
+                <td><label for="monthly">Monthly</label></td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="stype" id="annual" value="Annual"></td>
+                <td><label for="annual">Annual</label></td>
+            </tr>
+        </table>
+        <hr>
+        <!-- Check box is used when there are multiple choices and the user can select more than one option-->
+        <h4>Select skills (Check boxes)</h4>
+        <table>
+            <tr>
+                <td>
+                    <input type="checkbox" name="skills" id="html" value="html">
+                    <label for="html">HTML</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="skills" id="css" value="css">
+                    <label for="css">CSS</label>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="skills" id="js" value="js">
+                    <label for="js">JavaScript</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="skills" id="java" value="java">
+                    <label for="java">Java</label>
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <!-- color picker -->
+        <label for="fav">Pick your fav Color</label>
+        <input type="color" name="" id="fav">
+        <hr>
+        <!-- date picker -->
+        <label for="dt">Date of Birth</label>
+        <input type="date" name="" id="dt">
+        <hr>
+
+        <!-- progress element (new in html 5) -->
+        <h2>The status of the project</h2>
+        <progress value="25" max="100"> </progress>
+        <hr>
+        <!-- range -->
+        <label for="count">Rangle Input</label>
+        <input type="range" name="age" min="1" max="100">
+        <hr>
+        <!-- textarea -->
+        <h2>About you</h2>
+        <textarea name="decription" id="" cols="50" rows="10"></textarea>
+        <hr>
+        <!-- button element -->
+        <!-- the input type button has no action by default
+         a javascript can be written to define a custom action to the button -->
+        <input type="button" value="Button" onclick="">
+        <!-- the input type submit is used to submit the data on the form to the URL mentioned in the action attribute of the form -->
+        <input type="submit">
+        <!-- clears all the form data and resets to the defaults -->
+        <input type="reset" value="Clear">
+
+    </form>
+</body>
+
+</html>
