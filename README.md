@@ -14,14 +14,14 @@ Once cloned, you can open the files in your preferred code editor or IDE. Popula
 
 The repository is organized into subfolders...
 
-### HTML 
+### frontend/HTML 
 
 This folder contains HTML code samples...
 
-### CSS
+### frontend/CSS
 
 This folder houses CSS code samples...
 
-### JavaScript
+### frontend/JavaScript
 
 This folder includes JavaScript code samples...
