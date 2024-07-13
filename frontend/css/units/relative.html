@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Relative units 
+    %  - relative to the parent unit
+    em -- relative to the parent
+    rem  -- relative to the root element
+    vw -- relative to view port width
+    vh -- relative to view port height
+    -->
+
+    <style>
+        .quarter {
+            width: 25vw;
+            height: 25vh;
+            background-color: aqua;
+        }
+
+        .half {
+            width: 75vw;
+            height: 75vh;
+            background-color: orange;
+        }
+
+        .divper {
+            width: 50%;
+            height: 50%;
+            background-color: aqua;
+            /* border: 2px solid black; */
+        }
+
+        .divper1 {
+            width: 50%;
+            height: 50%;
+            background-color: orange;
+            /* border: 2px solid black; */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="quarter"></div> -->
+    <div class="half">
+        <div class="divper">
+            <div class="divper1"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>
