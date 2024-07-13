@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* the margin is the space between the outer boders of two elements */
+
+        .m,
+        .mshort1,
+        .mshort2,
+        .mshort3,
+        .mshort4 {
+            border: 1px solid blue
+        }
+
+        .m {
+            /* setting up individual margins */
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 30px;
+            margin-left: 30px;
+        }
+
+        .mshort4 {
+            /* top right bottom left */
+            margin: 10px 20px 10px 30px;
+        }
+
+        .mshort2 {
+            /* top and bottom 10px -- right and left 20px */
+            margin: 10px 20px;
+        }
+
+        .mshort3 {
+            /* top left/right bottom */
+            margin: 10px 40% 10px;
+        }
+
+        .mshort1 {
+            /* applies to all sides  */
+            margin: 10px;
+        }
+
+        /* margin:auto 
+            this only works on block level elements
+            it adjusts the left and right margins of a block element
+            if the margin:auto has to have an effect
+            the width has to be set to a lesser value than 100vw
+        */
+    </style>
+</head>
+
+<body>
+    <div class="m">
+        <p>Margins</p>
+    </div>
+    <div class="mshort1">
+        <p>Margins</p>
+    </div>
+    <div class="mshort2">
+        <p>Margins</p>
+    </div>
+    <div class="mshort4">
+        <p>Margins</p>
+    </div>
+
+    <hr>
+    <div class="m">
+        <p>Margins</p>
+    </div>
+    <div class="m">
+        <p>Margins</p>
+    </div>
+
+    <div class="mshort3">
+        <p>margin</p>
+    </div>
+</body>
+
+</html>
