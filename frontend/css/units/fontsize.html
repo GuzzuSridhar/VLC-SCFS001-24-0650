@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- default font size is 16px -->
+    <style>
+        :root {
+            font-size: 32px;
+        }
+
+        /* style with absolute font size */
+        .absfont {
+            font-size: 8px;
+        }
+
+        /* relative font size in em */
+        .emfont {
+            font-size: 2em;
+        }
+
+        /* relative font size in rem */
+        .remfont {
+            font-size: .5rem;
+        }
+
+        /* parent box */
+        .box {
+            font-size: 10px;
+        }
+
+        /* sizing the box based on the font size */
+        .box1 {
+            width: 20rem;
+            height: 2rem;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <p>this is in the root font size</p>
+    <p class="absfont">This is 8 px</p>
+    <div class="box">
+        <p class="emfont">This is half of the parent font size </p>
+        <p class="remfont">This is half of the root font size </p>
+    </div>
+    <p class="remfont">This is half of the root font size </p>
+
+    <hr>
+    <div class="box1"></div>
+</body>
+
+</html>
