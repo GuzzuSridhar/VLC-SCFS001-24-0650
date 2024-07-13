@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* attribute selector
+            in this case all the input elements of type text are styled
+        */
+        input[type=text]:enabled {
+            background-color: aqua;
+        }
+
+        input[type=text]:disabled {
+            background-color: rgb(237, 235, 235);
+        }
+
+        input:focus {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <label for="name">Name</label>
+        <input type="text" id="name">
+
+        <label for="loc">Location</label>
+        <input type="text" id="loc" disabled>
+
+        <label for="pin">Pin</label>
+        <input type="number" id="pin">
+
+    </form>
+
+</body>
+
+</html>
