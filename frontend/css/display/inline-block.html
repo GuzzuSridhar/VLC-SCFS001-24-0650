@@ -10,7 +10,7 @@
         .d1 {
             display: inline-block;
             height: 20vh;
-            width: 20vw;
+            width: 20vh;
         }
 
         .d {
@@ -36,7 +36,6 @@
     </style>
 </head>
 
-
 <body>
     <div class="dmain">
         <div class="d">
@@ -52,6 +51,66 @@
             <div class="sd"></div>
         </div>
     </div>
+
+    <script>
+        function displayViewportSize() {
+            const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+            const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+            const viewportSizeText = `Viewport Width: ${vw}px, Viewport Height: ${vh}px`;
+
+            let pElement = document.getElementById('viewport-size');
+            if (!pElement) {
+                pElement = document.createElement('p');
+                pElement.id = 'viewport-size';
+                document.body.appendChild(pElement);
+            }
+            pElement.textContent = viewportSizeText;
+
+            const dElements = document.querySelectorAll('.d');
+            dElements.forEach(element => {
+                const computedStyle = window.getComputedStyle(element);
+                // const sizeInfo = `Size for ${element.className} - Width: ${computedStyle.width}, Height: ${computedStyle.height}`;
+                const sizeInfo = `Size of Outer Boxes - Width: ${computedStyle.width}, Height: ${computedStyle.height}`;
+
+                let sizeElement = document.getElementById(`size-info-${element.className}`);
+                if (!sizeElement) {
+                    sizeElement = document.createElement('p');
+                    sizeElement.id = `size-info-${element.className}`;
+                    document.body.appendChild(sizeElement);
+                }
+                sizeElement.textContent = sizeInfo;
+            });
+
+            const sdSize = window.getComputedStyle(document.querySelector('.sd'));
+            // const sdSizeInfo = `Size for .sd - Width: ${sdSize.width}, Height: ${sdSize.height}`;
+            const sdSizeInfo = `Size of Inner Boxes -  Width: ${sdSize.width}, Height: ${sdSize.height}`;
+            let sdSizeElement = document.getElementById('size-info-sd');
+            if (!sdSizeElement) {
+                sdSizeElement = document.createElement('p');
+                sdSizeElement.id = 'size-info-sd';
+                document.body.appendChild(sdSizeElement);
+            }
+            sdSizeElement.textContent = sdSizeInfo;
+
+            const sdElements = document.querySelectorAll('.sd');
+            sdElements.forEach(element => {
+                const computedStyle = window.getComputedStyle(element);
+                // const marginInfo = `Margins for ${element.className} - Top: ${computedStyle.marginTop}, Right: ${computedStyle.marginRight}, Bottom: ${computedStyle.marginBottom}, Left: ${computedStyle.marginLeft}`;
+                const marginInfo = `Margins for Inner Boxes - Top: ${computedStyle.marginTop}, Right: ${computedStyle.marginRight}, Bottom: ${computedStyle.marginBottom}, Left: ${computedStyle.marginLeft}`;
+
+                let marginElement = document.getElementById(`margin-info-${element.className}`);
+                if (!marginElement) {
+                    marginElement = document.createElement('p');
+                    marginElement.id = `margin-info-${element.className}`;
+                    document.body.appendChild(marginElement);
+                }
+                marginElement.textContent = marginInfo;
+            });
+        }
+
+        window.addEventListener('resize', displayViewportSize);
+        window.addEventListener('load', displayViewportSize);
+    </script>
 </body>
 
 </html>
