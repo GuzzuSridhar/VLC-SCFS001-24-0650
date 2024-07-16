@@ -1,3 +1,3 @@
 console.log("Welcome to Node JS");
 
-/* the node jas files are always with the extension ".js" */
+/* the node js files are always with the extension ".js" */
