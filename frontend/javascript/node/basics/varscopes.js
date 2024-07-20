@@ -3,10 +3,10 @@
     let and const - block scope
 */
 
-let globalLet = 100;
+let globalLet = 100; // global scopped
 {
-  let blockVar = 10; // block scoped
-  var globalVar = 20;
+  let blockVar = 10; // block scopped
+  var globalVar = 20; // global scopped
   console.log(globalLet + " inside the block");
   console.log(blockVar + " inside the block");
   console.log(globalVar + " inside the block");
