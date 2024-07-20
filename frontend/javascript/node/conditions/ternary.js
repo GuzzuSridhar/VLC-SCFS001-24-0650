@@ -1,6 +1,8 @@
 /* 
     ternary operator is a replace ment / shortcut for the if-else statemnt
     can handle only one condition (no else if accepted)
+    syntax
+    (condition) ? what to do if true : what to do if false
 */
 // if else
 let age = 15,

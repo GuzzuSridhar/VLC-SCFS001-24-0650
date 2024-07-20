@@ -1,0 +1,19 @@
+Notes for Loops
+--------------------
+
+every loop has to have the following:
+-------------------------------------
+1. loop variable
+2. exit condition
+3. increment / decrement the loop variable's value
+
+types of Loops
+------------------------
+1. for loop
+2. while loop
+3. do while loop
+
+Other important concepts in a loop (applicable for all loop types)
+-----------------------------------
+1. break
+2. continue
