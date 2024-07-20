@@ -31,3 +31,6 @@ if (dept.toLowerCase() == "sales") {
 }
 
 // console.log(sal);
+
+let age = 10;
+if (age >= 18) console.log("you can Vote");
