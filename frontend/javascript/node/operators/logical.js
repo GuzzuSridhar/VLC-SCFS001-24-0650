@@ -27,7 +27,7 @@ console.log(res); // false
     F   F     F
 */
 
-// OR Operator ""
+// OR Operator "||"
 console.log("--------------OR Operator---------------");
 res = sal > 5000 || comm > 0;
 console.log(res); // true
@@ -41,3 +41,13 @@ console.log(res); // true
     F   T     T
     F   F     F
 */
+
+// NOT Operator "!"
+console.log("--------------NOT Operator---------------");
+res = !(sal > 5000 || comm > 0);
+console.log(res); // false
+res = !(sal > 5000 || role.toLowerCase() != "manager");
+console.log(res); // false
+
+let isGood = true;
+console.log(!isGood); // false
