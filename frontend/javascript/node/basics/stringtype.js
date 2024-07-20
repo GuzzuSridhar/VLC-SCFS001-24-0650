@@ -20,7 +20,7 @@ let dept = `sales`;
 
 let firstName = "David";
 let lastName = "Boon";
-let fullName = firstName + lastName; // string concatenation using the "+" operator
+let fullName = firstName + " " + lastName; // string concatenation using the "+" operator
 
 console.log("The full name is : " + fullName);
 
@@ -67,5 +67,37 @@ console.log("The last character is " + myname.charAt(myname.length - 1)); // ens
 console.log("--------------------");
 console.log("\x1b[36m", "Using the other functions", "\x1b[0m");
 console.log("--------------------");
+
+// changing the case
 console.log(myname.toUpperCase());
 console.log(myname.toLowerCase());
+
+//substring
+// console.log(myname.substring(-5));
+console.log(myname.at(-1));
+
+// trimming the strings
+console.log("--------------------");
+console.log("\x1b[36m", "Using the trim()", "\x1b[0m");
+console.log("--------------------");
+myname = "        Alex          ";
+console.log(myname.length);
+console.log(myname.trim().length);
+console.log(myname.trimStart().length);
+console.log(myname.trimEnd().length);
+
+// split
+console.log("--------------------");
+console.log("\x1b[36m", "Using the split()", "\x1b[0m");
+console.log("--------------------");
+myname = "David Boon";
+firstName = myname.split(" ", 2); // seperates the words in a string based on the space
+console.log(firstName);
+
+// concat
+console.log("--------------------");
+console.log("\x1b[36m", "Using the concat()", "\x1b[0m");
+console.log("--------------------");
+firstName = "Bill";
+lastName = "Gates";
+console.log(firstName.concat(" ").concat(lastName)); // chaining the functions
