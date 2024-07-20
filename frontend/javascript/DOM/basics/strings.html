@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: fit-content;
+            margin: auto;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="name"></p>
+    <hr>
+    <p id="ucase"></p>
+    <p id="lcase"></p>
+
+    <hr>
+    <div>
+        <label for="yourname">Enter Name: </label>
+        <input type="text" name="" id="yourname">
+        <button id="add" onclick="add()">Add</button>
+        <p id="yname"></p>
+    </div>
+
+    <script>
+        // the script is executed onload of the document 
+        let name = "Alex"
+        console.log(name)
+        document.getElementById("name").innerText = name;
+        document.getElementById("ucase").innerText = name.toUpperCase();
+        document.getElementById("lcase").innerText = name.toLowerCase();
+        console.log(name.toUpperCase())
+
+
+        // functions are not executed on load and are to be called explicitly.
+        function add() {
+            let yourname = document.getElementById("yourname").value
+            document.getElementById("yname").innerText = yourname
+        }
+    </script>
+</body>
+
+</html>
