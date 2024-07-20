@@ -20,7 +20,7 @@ let dept = `sales`;
 
 let firstName = "David";
 let lastName = "Boon";
-let fullName = firstName + lastName;
+let fullName = firstName + lastName; // string concatenation using the "+" operator
 
 console.log("The full name is : " + fullName);
 
@@ -34,3 +34,38 @@ wspace = ` this
             is a string in 
             multiple lines`;
 console.log(wspace);
+
+// ------------------------------- String Methods -------------------------------------------------------
+console.log(
+  "------------------------------- String Methods -------------------------------------------------------"
+);
+
+// a string is a array of characters
+// array is an indexed storage of information (collection)
+
+let myname = "David Boon";
+//  getting the length of the myname
+console.log("the length of " + myname + " is " + myname.length);
+
+// Accessing the specific characters at a specific index
+console.log("--------------------");
+console.log("\x1b[36m", "Using the Array Index", "\x1b[0m");
+console.log("--------------------");
+console.log("The first character is " + myname[0]);
+// console.log("The first character is " + myname[3]);
+console.log("The last character is " + myname[myname.length - 1]); // ensure the last character is printed
+
+// using the builtin function charAt()
+console.log("--------------------");
+console.log("\x1b[36m", "Using the charAt()", "\x1b[0m");
+console.log("--------------------");
+console.log("The first character is " + myname.charAt(0));
+// console.log("The last character is " + myname.charAt(3));
+console.log("The last character is " + myname.charAt(myname.length - 1)); // ensure the last character is printed
+
+// Other Methods with string
+console.log("--------------------");
+console.log("\x1b[36m", "Using the other functions", "\x1b[0m");
+console.log("--------------------");
+console.log(myname.toUpperCase());
+console.log(myname.toLowerCase());
