@@ -36,19 +36,19 @@ console.log(res);
 console.log("--------------");
 // Increment post
 res = n1++;
-console.log(res);
-console.log(n1);
+console.log(res); // 10
+console.log(n1); //11
 
 // Increment pre
 res = ++n1;
-console.log(res);
+console.log(res); // 12
 
 console.log("--------------");
 // decrement post
 res = n1--;
-console.log(res);
-console.log(n1);
+console.log(res); // 12
+console.log(n1); // 11
 
 // decrement pre
 res = --n1;
-console.log(res);
+console.log(res); // 10
