@@ -14,9 +14,7 @@ let change = names.push("John"); // returns the new length of the array after pu
 console.log(
   "The changed Array is: " +
     names +
-    ". " +
-    " John " +
-    " was added at the end and the current list is of " +
+    ".  John was added at the end and the current list is of " +
     change +
     " elements"
 );
@@ -28,9 +26,7 @@ change = names.unshift("Jim"); // returns the new length of the array after unsh
 console.log(
   "The changed Array is: " +
     names +
-    ". " +
-    " Jim " +
-    " was added at the start and the current list is of " +
+    ". Jim  was added at the start and the current list is of " +
     change +
     " elements"
 );
