@@ -45,4 +45,5 @@ console.log(hetroarray[5]); // accessin an index that is not present
 1. Size of Arrays is not bound.
 2. # of elements can be as needed 
 3. Arrays in Js are hetrogeneous
+4. Accessing an index of an array which is not present will result in a "undefined"
 */
