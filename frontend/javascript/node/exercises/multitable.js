@@ -13,3 +13,11 @@ while (x < 11) {
   console.log("5 x " + x + " = " + 5 * x);
   x++;
 }
+
+console.log("-------using the do while loop-------------------");
+// using the while loop
+x = 1;
+do {
+  console.log("5 x " + x + " = " + 5 * x);
+  x++;
+} while (x < 11);
