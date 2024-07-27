@@ -11,36 +11,36 @@ const names = [
   "Noah Clark",
 ];
 
-let swapped;
+let changed;
 do {
-  swapped = false;
+  changed = false;
   for (let index = 0; index < names.length; index++) {
     const element = names[index];
     const nextElement = names[index + 1];
     if (element > nextElement) {
       names[index] = nextElement;
       names[index + 1] = element;
-      swapped = true;
+      changed = true;
     }
   }
-} while (swapped);
+} while (changed);
 console.log(
   "\x1b[4m \x1b[33m " + "     Case Sensitive Ascending sort      " + "\x1b[0m"
 );
 console.log("\x1b[32m" + names + "\x1b[0m");
 
 do {
-  swapped = false;
+  changed = false;
   for (let index = 0; index < names.length; index++) {
     const element = names[index];
     const nextElement = names[index + 1];
     if (element < nextElement) {
       names[index] = nextElement;
       names[index + 1] = element;
-      swapped = true;
+      changed = true;
     }
   }
-} while (swapped);
+} while (changed);
 console.log(
   "\x1b[4m \x1b[33m " + "     Case Sensitive Descending sort     " + "\x1b[0m"
 );
