@@ -7,3 +7,7 @@ function subtract(a, b) {
 }
 
 module.exports = { add, subtract };
+
+// alternate way of importing using alias for the functions
+module.exports.x = add;
+module.exports.y = subtract;
