@@ -1,3 +1,18 @@
 implement a function similar to Math.pow()
 write imperative code for the built in array functions like, compare, map, filter....
 convert a string to initcap. ex:- input alex  output -- Alex
+from a given number array find the prime numbers
+print fibonocci series (10 number)
+print patterns
+    *
+    **
+    ***
+    ****
+    1
+    12
+    123
+    1234
+    12345
+
+using modules and functions
+1. write a calculator
