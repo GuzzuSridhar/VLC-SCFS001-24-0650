@@ -2,6 +2,9 @@
 Method of the array which do not change the state of the array / object
 */
 
+// declare an array of Strings
+let names = ["Alex", "James", "Sara", "David"];
+
 console.log(
   "\x1b[4m\x1b[33m" +
     "               Mutating Methods - that return a new array or other type                 " +
@@ -94,3 +97,15 @@ console.log(
   "\x1b[32mThe returned value is " + res + " --> search for name 'dave'"
 );
 console.log("The returned value is a " + typeof res + "\x1b[0m");
+
+// map method Returns a new array with the results of calling a provided function on every element in the calling array
+console.log(
+  "\x1b[4m\x1b[35m" +
+    "          map method  - Returns a new array with all elements applied with provided function.                " +
+    "\x1b[0m"
+);
+let nums = [1, 2, 3, 4];
+console.log("\x1b[36mThe Original array is: " + nums + "\x1b[0m");
+let mapArr = nums.map((x) => x * 2);
+console.log("\x1b[32mThe returned array is " + mapArr + " --> multiplied by 2");
+console.log("The returned value is an " + typeof mapArr + "\x1b[0m");
