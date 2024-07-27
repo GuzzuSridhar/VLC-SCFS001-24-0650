@@ -1,2 +1,3 @@
 implement a function similar to Math.pow()
 write imperative code for the built in array functions like, compare, map, filter....
+convert a string to initcap. ex:- input alex  output -- Alex
