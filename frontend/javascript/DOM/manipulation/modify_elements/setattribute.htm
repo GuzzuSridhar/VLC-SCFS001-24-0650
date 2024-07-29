@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <div id="myDiv" style="background-color: red; width: 50%;">
+        <img id="testi" src="../../resources/person1.jpg" alt="" width="100px" height="100px">
+    </div>
+    <button id="test">remove</button>
+    <button id="testa">add</button>
+
+    <script>
+        const btn = document.getElementById('test')
+        btn.addEventListener('click', () => {
+
+            document.getElementById('testi').removeAttribute('width')
+            document.getElementById('testi').removeAttribute('height')
+            document.getElementById('myDiv').removeAttribute('style')
+        })
+        const btn1 = document.getElementById('testa')
+        btn1.addEventListener('click', () => {
+
+            document.getElementById('testi').setAttribute('width', '100px')
+            document.getElementById('testi').setAttribute('height', '100px')
+            document.getElementById('myDiv').setAttribute('style', 'width:50%; background-color: red')
+        })
+    </script>
+</body>
+
+</html>
