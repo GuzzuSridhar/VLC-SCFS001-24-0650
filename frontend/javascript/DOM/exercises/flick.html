@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="one" style="background-color: cyan;" onmouseover="invert()"></div>
+    <div id="two" style="background-color: orange;" onmouseover="invert()"></div>
+    <button id="invert" onclick="invert()">invert</button>
+    <script>
+        function invert() {
+            const one = document.getElementById("one").style.backgroundColor;
+            const two = document.getElementById("two").style.backgroundColor;
+            if (one == "cyan") {
+                document.getElementById("one").style.backgroundColor = "orange";
+                document.getElementById("two").style.backgroundColor = "cyan";
+            }
+            else if (one == "orange") {
+                document.getElementById("one").style.backgroundColor = "cyan";
+                document.getElementById("two").style.backgroundColor = "orange";
+            }
+        }
+    </script>
+</body>
+
+</html>
