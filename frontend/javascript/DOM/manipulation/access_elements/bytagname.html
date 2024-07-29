@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>Header</h1>
+    </div>
+    <h1>Header</h1>
+    <h1>Header</h1>
+    <h1>Header</h1>
+    <p>Demo of using the tagename in js </p>
+    <h1>Header</h1>
+    <h1>Header</h1>
+
+    <script>
+        const heads = document.getElementsByTagName('h1'); // returns an array of all h1 tags
+        heads[0].style.color = "red"
+        // access various properties of the elements
+        console.log(heads[0].id);
+        console.log(heads[0].innerText);
+        console.log(heads[0].className);
+        console.log(heads[0].tagName);
+        console.log(heads[0].parentElement);
+        console.log(heads[0].parentNode);
+    </script>
+</body>
+
+</html>
