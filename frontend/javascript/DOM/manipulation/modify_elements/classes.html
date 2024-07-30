@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="myText">This is a sample text</p>
+    <button id="b1">Add</button>
+    <button id="b2">Remove</button>
+    <button id="b3">toggle</button>
+
+    <script>
+        const text = document.getElementById("myText");
+        const btnAdd = document.getElementById("b1")
+        const btnRem = document.getElementById("b2")
+        const btnTog = document.getElementById("b3")
+
+        btnAdd.addEventListener('click', () => {
+            text.classList.add('highlight');
+            text.classList.add('bold');
+        });
+        btnRem.addEventListener('click', () => {
+            text.classList.remove('highlight');
+            text.classList.remove('bold');
+        });
+        btnTog.addEventListener('click', () => {
+            text.classList.toggle('highlight');
+            text.classList.toggle('bold');
+        });
+    </script>
+</body>
+
+</html>
