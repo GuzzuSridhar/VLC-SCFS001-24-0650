@@ -11,6 +11,11 @@ employees.push(new People("Alex", 25, "KL")); //this keyword is replaced by empl
 employees.push(new People("Alice", 45, "NY")); //this keyword is replaced by employees[1]
 employees.push(new People("Joe", 65, "SG")); //this keyword is replaced by employees[2]
 
+// showing a JSON
+console.log(employees[0]);
+console.log(employees[1]);
+console.log(employees[2]);
+
 // printing the people list
 
 for (let i = 0; i < employees.length; i++) {
