@@ -20,7 +20,6 @@ function ShowImages() {
             <img src={imgThree} alt="no img" width="200px" height="200px" />
             <img src={imgFour} alt="no img" width="200px" height="200px" />
 
-
         </div>
     )
 }
