@@ -1,3 +1,4 @@
+import ExternalStyles from "./components/ExternalStyles";
 import InlineStyles from "./components/InlineStyles";
 import StyleObjects from "./components/StyleObjects";
 
@@ -6,6 +7,7 @@ function App() {
     <div>
       <InlineStyles />
       <StyleObjects />
+      <ExternalStyles />
     </div>
   );
 }
