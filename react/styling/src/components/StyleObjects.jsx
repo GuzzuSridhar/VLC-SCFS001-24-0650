@@ -16,6 +16,9 @@ function StyleObjects() {
         margin: 'auto'
     }
 
+    // combine the 2 or more style objects
+    const combi = { ...txtStyle, ...myStyle }
+
 
     // the return statement embeds the body of HTML
     return (
@@ -24,7 +27,11 @@ function StyleObjects() {
             <p style={txtStyle}> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Deleniti aut ad voluptas perspiciatis itaque voluptatum nemo,
                 animi at quo dolorem sapiente debitis soluta, veritatis obcaecati, inventore facilis ullam suscipit eum. </p>
-        </div>
+            {/* applying the combined style */}
+            <h1 style={combi}>Combined style</h1>
+            {/* applying the individual styles as combibed styles */}
+            <h1 style={{ ...txtStyle, ...myStyle }}>Combined style</h1>
+        </div >
     )
 }
 
