@@ -1,0 +1,11 @@
+.js files 
+   use when you are writing pure js logic without returning any HTML from the function
+
+.jsx
+   use when you are returning  HTML from the function
+
+
+NOTE:
+
+ these extensions can be used for any files and restrictions are imposed. any extensions for any files is Good.
+ 
