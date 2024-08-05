@@ -5,3 +5,13 @@ h1{
 p{
     text-align: center;
 }
+
+.belowAvg{
+    color: #eb1325;
+}
+.avg{
+    color: #f7b705;
+}
+.aboveAvg{
+    color: #033016;
+}

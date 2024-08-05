@@ -12,5 +12,4 @@ const Ternary = (props) => {
 
     )
 }
-
 export default Ternary
