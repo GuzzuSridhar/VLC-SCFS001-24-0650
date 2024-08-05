@@ -1,6 +1,8 @@
+// applying the style sheets
+import "./Styles.css";
+
 import Ternary from "./Ternary";
 import IfElse from "./IfElse";
-import "./Styles.css";
 import SwitchCase from "./SwitchCase";
 
 function App() {
