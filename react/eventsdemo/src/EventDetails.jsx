@@ -5,9 +5,11 @@ const EventDetails = () => {
     const getEvent = (e) => {
         console.log(e);
         console.log(e.target);
+        console.log(e.type);
         console.log(e.target.tagName);
         console.log(e.target.innerText);
         console.log(e.target.value);
+
 
         if (e.target.tagName === 'INPUT')
             e.target.value = e.target.tagName + " " + e.type + " Event fired"
