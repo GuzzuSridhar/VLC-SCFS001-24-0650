@@ -1,6 +1,7 @@
 import Ternary from "./Ternary";
 import IfElse from "./IfElse";
 import "./Styles.css";
+import SwitchCase from "./SwitchCase";
 
 function App() {
   return (
@@ -10,6 +11,9 @@ function App() {
       <hr />
       <h1>Usage of If Else Statement</h1>
       <IfElse salary={1500} />
+      <hr />
+      <h1>Usage of Switch Statement</h1>
+      <SwitchCase salary={100} />
     </div>
   );
 }
