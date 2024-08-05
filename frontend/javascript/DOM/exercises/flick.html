@@ -18,6 +18,8 @@
     <button id="invert" onclick="invert()">invert</button>
     <script>
         function invert() {
+            // open the inspect window before the debugger is executed
+            debugger;
             const one = document.getElementById("one").style.backgroundColor;
             const two = document.getElementById("two").style.backgroundColor;
             if (one == "cyan") {
