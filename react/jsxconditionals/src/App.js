@@ -1,9 +1,12 @@
 import Ternary from "./Ternary";
+import "./Styles.css";
 
 function App() {
   return (
     <div>
-      <Ternary salary={1500} />
+      <h1>Usage of the ternary operator</h1>
+      <Ternary salary={7500} />
+      <hr />
     </div>
   );
 }
