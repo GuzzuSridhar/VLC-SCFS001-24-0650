@@ -8,6 +8,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         {/* navigate to is used to link the end point to another path */}
+
+        {/* the "/" end point is also referred to as root or default route */}
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/contact" element={<Contact />} />
