@@ -1,0 +1,12 @@
+.footer{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100vw;
+}
+
+.homepage-container{
+    padding: 50px;
+    margin-top: 150px ;
+    background-color: #ceedeb;
+}
