@@ -7,7 +7,7 @@ function Counter() {
     const [count, setCount] = useState(0)
     // const [age, setAge] =useState(18)
 
-    var num = 0;
+    var num = 10;
 
     const add = () => {
         num = num + 1
