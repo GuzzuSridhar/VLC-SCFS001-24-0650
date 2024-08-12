@@ -4,8 +4,14 @@ function Counter() {
 
     // syntax of the useState
     // the destructured array has a state / variable and a function to set the value of the state 
-    const [count, setCount] = useState(10)
+    const [count, setCount] = useState(0)
     // const [age, setAge] =useState(18)
+
+    var num = 0;
+
+    const add = () => {
+        num = num + 1
+    }
 
     const incrementCount = () => {
         // setCount(count + 1); // directly access the count 
@@ -14,8 +20,13 @@ function Counter() {
 
     return (
         <div>
+            <h2>Using the useState</h2>
             <p>Count is {count}</p>
             <button onClick={incrementCount}>Click</button>
+            <hr />
+            <h2>Using the variables</h2>
+            <p>Count is {num}</p>
+            <button onClick={add}>Click</button>
         </div>
     )
 }
