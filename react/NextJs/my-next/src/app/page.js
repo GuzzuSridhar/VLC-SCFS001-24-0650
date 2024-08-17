@@ -12,9 +12,9 @@ export default function Home() {
 
       <input type="text" />
       <input type="text" />
-      <button onClick={() => console.log("Client")}>Click</button>
+      {/* <button onClick={() => console.log("Client")}>Click</button> */}
 
-      {/* <MyComponent /> */}
+      <MyComponent />
       <Link href="/new">new</Link>
     </main>
   );
