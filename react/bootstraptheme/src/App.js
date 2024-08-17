@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import { useEffect, useRef, useState } from "react";
+import ThemeSwitch from "./components/ThemeSwitch";
 
 function App() {
+  const [darkmode, setDarkMode] = useState(false);
+  const target = useRef(null);
+
+  useEffect(() => {
+    if (darkmode) {
+      target.current.classList.add("bg-dark", "text-light");
+    } else {
+      target.current.classList.remove("bg-dark", "text-light");
+    }
+  }, [darkmode]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div>
+      <ThemeSwitch darkmode={darkmode} setDarkmode={setDarkMode} />
+      <div ref={target}>
+        <h1>Theme Switch Demo</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo,
+          deserunt inventore tenetur, quos provident eum reiciendis aspernatur
+          quas error modi aliquid laudantium est, sunt voluptatum. Dignissimos
+          ad dolorum tempora illum.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </div>
     </div>
   );
 }
