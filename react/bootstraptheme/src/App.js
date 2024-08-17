@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../src/Styles.css";
 import { useEffect, useRef, useState } from "react";
 import ThemeSwitch from "./components/ThemeSwitch";
 
@@ -8,9 +9,11 @@ function App() {
 
   useEffect(() => {
     if (darkmode) {
-      target.current.classList.add("bg-dark", "text-light");
+      // target.current.classList.add("bg-dark", "text-light");
+      document.body.classList.add("bg-dark", "text-light");
     } else {
-      target.current.classList.remove("bg-dark", "text-light");
+      document.body.classList.remove("bg-dark", "text-light");
+      // target.current.classList.remove("bg-dark", "text-light");
     }
   }, [darkmode]);
 
