@@ -1,0 +1,32 @@
+table,td,th{
+    border: 1px solid blue;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.centerhead{
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+}
+.centercontent{
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.buttonmain{
+    background-color: blue;
+    border-radius: 15px;
+    color: aliceblue;
+    padding: 13px;
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+.navbutton{
+    background-color: gray;
+    margin: 5px;
+}
+
