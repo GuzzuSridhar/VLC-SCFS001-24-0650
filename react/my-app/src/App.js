@@ -1,6 +1,9 @@
+import Test from "./Test";
+
 function App() {
   return (
     <>
+      <Test />
       <h1> Welcome to React</h1>
       <h2>something</h2>
       <p>
